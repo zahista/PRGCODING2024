@@ -1,6 +1,103 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <a href="http://seznam.cz">Seznam</a>
+
+    <h1>Nadpis</h1>
+    <h2>Nadpis</h2>
+    <h3>Nadpis</h3>
+    <h4>Nadpis</h4>
+    <h5>Nadpis</h5>
+    <h6>Nadpis</h6>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, fugit facere debitis pariatur, saepe minima
+        fuga error repudiandae non ex aperiam. Aut alias animi assumenda veniam, nesciunt error illo reiciendis.</p>
+
+    <span>Jsem inline element</span>
+
+    <div>Jsem blokový element</div>
+
+    <main></main>
+
+    <aside></aside>
+
+    <footer></footer>
+
+    <head></head>
+
+    <article></article>
+
+    <section></section>
 
 
 
+    <table>
+        <thead>
+            <tr>
+                <th>Číslo objednávky</th>
+                <th>Zákazník</th>
+                <th>Hodnota</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>12653</td>
+                <td>tomas.marny@mail.cz</td>
+                <td>1 500,00 Kč</td>
+            </tr>
+            <tr>
+                <td>12354</td>
+                <td>petra.novakova@mail.cz</td>
+                <td>850,00 Kč</td>
+            </tr>
+            <tr>
+                <td>12355</td>
+                <td>jan.rychly@mail.cz</td>
+                <td>1 200,00 Kč</td>
+            </tr>
+            <tr>
+                <td>12356</td>
+                <td>jiri.novy@mail.cz</td>
+                <td>500,00 Kč</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td></td>
+                <td>Hodnota celkem:</td>
+                <td>4 050,00 Kč</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+    <form action="./test.html">
+        <label for="name">Jméno</label>
+        <input id="name" type="text" placeholder="Tomáš" >
+
+        <textarea id="bio" name="bio" rows="5">
+            Výchozí obsah - bude viditelný i editovatelný.
+          </textarea>
+        
+
+          <select id="subscription-length" name="sub-length">
+            <option value="1">1 měsíc</option>
+            <option value="6">6 měsíců</option>
+            <option value="12" selected>12 měsíců</option>
+            <option value="24">24 měsíců</option>
+          </select>
+
+        <button type="submit">Odeslat data</button>
+    </form>
+
+
+</body>
 
 </html>
