@@ -80,21 +80,59 @@
 
     <form action="./test.html">
         <label for="name">Jméno</label>
-        <input id="name" type="text" placeholder="Tomáš" >
+        <input id="name" type="text" placeholder="Tomáš">
 
         <textarea id="bio" name="bio" rows="5">
             Výchozí obsah - bude viditelný i editovatelný.
           </textarea>
-        
 
-          <select id="subscription-length" name="sub-length">
+
+        <select id="subscription-length" name="sub-length">
             <option value="1">1 měsíc</option>
             <option value="6">6 měsíců</option>
             <option value="12" selected>12 měsíců</option>
             <option value="24">24 měsíců</option>
-          </select>
+        </select>
 
+
+        <input type="text" value="Test" />
+
+        <input type="email">
+
+        <input type="password">
+
+        <label for="terms" class="checkbox-and-radio-label">
+            <input id="terms" type="checkbox" name="terms" required> Souhlasím s podmínkami použití aplikace
+        </label>
+
+        <fieldset>
+            <legend>Zvolte druh předplatného</legend>
+            <label for="basic-plan" class="checkbox-and-radio-label">
+                <input id="basic-plan" type="radio" name="plan" value="basic" required> Základní předplatné
+            </label>
+            <label for="pro-plan" class="checkbox-and-radio-label">
+                <input id="pro-plan" type="radio" name="plan" value="pro" required> Profesionální předplatné
+            </label>
+            <label for="custom-plan" class="checkbox-and-radio-label">
+                <input id="custom-plan" type="radio" name="plan" value="premium" required> Předplatné na míru
+            </label>
+        </fieldset>
+
+        <label for="subscription-start">Začátek předplatného</label>
+
+        <input id="subscription-start" type="date" name="sub-start" required>
+
+        <label for="amount">Počet kusů</label>
+        <input id="amount" type="number" name="amount" min="1" max="10">
+
+        <input type="search" name="search" placeholder="Co hledáte?">
+
+        <input type="file" name="file" accept="image/*">
+
+        <input type="submit" value="Vytvořit účet">
+        
         <button type="submit">Odeslat data</button>
+
     </form>
 
 
