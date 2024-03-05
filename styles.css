@@ -73,3 +73,18 @@ img {
     }
 }
 
+.simple-card {
+    width: 20rem;
+    max-width: 100%;
+    font-size: 1.15rem;
+    padding: 8px;
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 1rem;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        box-shadow: .25rem .25rem .5rem .15rem #a4a4a4;
+    }
+}
+
