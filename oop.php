@@ -20,7 +20,7 @@ class Dog extends Animal
         $this->name = $name;
     }
 
-    private function secret()
+    public function secret()
     {
         echo "Jsem tajná zpráva";
     }
@@ -51,11 +51,23 @@ class Math
 }
 
 
+"zastekej";
+
 $dog1 = new Dog("Buddy");
 $dog2 = new Dog("Ferda");
 $dog3 = new Dog("Azor");
 $dog1->make_sound();
 $dog2->make_sound();
+
+$animals = 
+[
+    'controller' => Dog::class,
+    'callback'=> 'make_sound'
+];
+
+
+
+
 
 echo $dog1->name;
 echo $dog2->name;
